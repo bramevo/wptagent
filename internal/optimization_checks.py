@@ -225,7 +225,8 @@ class OptimizationChecks(object):
         }
         self.cdn_headers = {
             'Airee': [{'Server': 'Airee'}],
-            'Akamai': [{'x-akamai-staging': 'ESSL'},
+            'Akamai': [{'Server': 'AkamaiNetStorage'},
+                       {'x-akamai-staging': 'ESSL'},
                        {'x-akamai-request-id': ''}],
             'Amazon CloudFront': [{'Via': 'CloudFront'}],
             'Aryaka': [{'X-Ar-Debug': ''}],
